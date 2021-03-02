@@ -7,6 +7,7 @@ namespace MudBlazor.Interfaces
     {
         public bool IsValid { get; }
         public string[] Errors { get; }
+        public void Validate();
         internal void Add(IFormComponent formControl);
         internal void Remove(IFormComponent formControl);
         internal void Update(IFormComponent formControl);
